@@ -10,7 +10,7 @@ author: kacper
 
 # Kasper, this is markdown
 
-Markdown is a really simple way of spitting our html. It's supports inline code `this.ShowCode()` which is nice.
+Markdown... is a really simple way of spitting our html. It's supports inline code `this.ShowCode()` which is nice.
 
     var ShowCode = function() {
       console.log('ooh, some more code');
