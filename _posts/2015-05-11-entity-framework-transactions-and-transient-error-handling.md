@@ -9,9 +9,9 @@ author: rob
 
 # Entity Framework Transactions and Transient Error Handling
 
-In any networked environment transient errors are pretty expected. It doesn't matter how good your infrastructure is, sometimes life happens. Enter the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934%28v=pandp.50%29.aspx), the purpose of the block is to allow developers a simple way of handling transient errors, network blips, timeout errors and the like, it's very simple to use and should probably be used in more places.
+In any networked environment transient errors are to be expected. It doesn't matter how good your infrastructure is, sometimes life happens. Enter the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934%28v=pandp.50%29.aspx), the block gives developers a simple way of handling transient errors, network blips, timeout errors and the like, it's very simple to use and should be used in more often.
 
-Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on Azure and we use Azure SQL databases. Helpfully there is a specific execution strategy which we can use out of the box, the `SqlAzureExecutionStrategy` is pretty much as you'd expect, that is until you want to use a transaction. Support for explicit transactions with the strategy have not been implemented, but it is something we want to use. To that end we rolled our own helper. The help has to perform a couple of simple tasks:
+Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on Azure and we use Azure SQL databases. Helpfully there is a specific execution strategy which we can use out of the box, the `SqlAzureExecutionStrategy` is pretty much as you'd expect, that is until you want to use an explicit transaction. Support for explicit transactions with the strategy have not been implemented, but it is something we want to use. To that end we rolled our own helper. The helper has to perform a couple of simple tasks:
 
  1. Disable the standard execution strategy.
    - If you don't then the Entity Framework strategy will blow up.
@@ -19,7 +19,7 @@ Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on 
  3. Use the strategy to execute an arbitrary action in a transaction scope.
  4. Dispose of the transaction, but do not complete, that is not our responsibility.
 
-So before I show you the code, it's probably worth showing how the code is consumed:
+So before I show you the code, it's probably worth showing how the code is used:
 
     var result = await Transaction.RunTransactionAsync(async scope =>
     {
@@ -28,7 +28,7 @@ So before I show you the code, it's probably worth showing how the code is consu
         return "Some Meaningful Result";
     });
 
-What this allows a user to do is simply request a given call is transactionally scoped. If the code succeeds then we can complete the scope and return any relevant data.
+This allows a developer request a given action is executed in a transaction and take advantage of the error handling block. If the code succeeds then we can complete the scope and return any relevant data.
 
 To achieve this is actually pretty simple:
 
