@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Index</title>
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href="../assets/themes/purplebricks/css/bootstrap-custom.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+      <link href="../assets/themes/purplebricks/css/custom.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+  </head>
+
+<body>
+    <div class="mobileLeft">
+        <div class="container">
+            <ul class="nav nav-stacked">
+                <li role="presentation"><a href="/account/login?ref=mobile_header">Log in</a></li>
+                <li role="presentation"><a href="/bookfreevaluation?ref=mobile_header">GET A FREE VALUATION</a></li>
+                <li role="presentation"><a href="/search?ref=mobile_header#!">Property search</a></li>
+                <li role="presentation"><a data-link="letting" href="/home/letting?ref=mobile_header">Letting services</a></li>
+                <li role="presentation"><a href="/tenants?ref=mobile_header">Tenants and Students</a></li>
+                <li role="presentation"><a href="/#meet-our-experts?ref=mobile_header" data-bind="click: function(data, event) { navigationController.navigate('meet-our-experts', 'home', event); pbApp.responsiveMenu.reset(); }" data-url="meet-our-experts">Meet our experts</a></li>
+                <li role="presentation"><a href="/home/contactus?ref=mobile_header">Contact us 24/7</a></li>
+                <li role="presentation"><a href="/home/contactus#callback?ref=mobile_header">We'll call you back</a></li>
+                <li role="presentation"><a href="https://livechat.boldchat.com/aid/655748812064301038/bc.chat?resize=true&amp;cbdid=2021972557415059212" data-chat="side" data-bind="click: loadChat">Live chat</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="master container-fluid">
+        <div id="wrap">
+            <header class="container-fluid" id="header">
+                <div class="container">
+                    <button type="button" class="navToggle visible-xs-block visible-sm-block" data-bind="click: responsiveMenu.toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar b1"></span>
+                        <span class="icon-bar b2"></span>
+                        <span class="icon-bar b3"></span>
+                    </button>
+                    <div>
+                        <a href="/?ref=header" class="logo pull-left">Purplebricks.com</a>
+                    </div>
+                </div>
+                <nav class="navbar navbar-default visible-md visible-lg">
+                    <div class="container-fluid">
+                        <div class="container">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center intoPic">
+                        <p>The tech team behind Purplebricks.com</p>
+                    </div>
+                </div>
+                {{ content }}
+            </div>
+
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p>
+                    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+                    with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+                    and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mobileBg"></div>
+    {% include JB/analytics %}
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../assets/themes/purplebricks/bootstrap/javascripts/bootstrap.min.js"></script>
+</body>
+</html>
