@@ -303,10 +303,6 @@ a[href^=tel] {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    #wrap {
-      margin: 0 auto -500px;
-      padding: 0 0 500px;
-    }
     .master {
         .masterContainer {
             padding-top: 125px;
@@ -374,10 +370,6 @@ a[href^=tel] {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    #wrap {
-      margin: 0 auto -430px;
-      padding: 0 0 430px;
-    }
     #header {
         > .container {
             width: 1170px;
