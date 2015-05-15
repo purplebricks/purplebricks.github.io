@@ -2,6 +2,7 @@
   height: 100%; }
 
 body {
+  margin-top: -22px;
   overflow-x: hidden;
   position: relative;
   -webkit-font-smoothing: antialiased; }
