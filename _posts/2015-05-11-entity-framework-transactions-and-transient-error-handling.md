@@ -40,7 +40,10 @@ To achieve this is actually pretty simple:
             var executionStrategy = new SqlAzureExecutionStrategy();
             return await executionStrategy.ExecuteAsync(async () =>
             {
-                var transactionOptions = new TransactionOptions { IsolationLevel = IsolationLevel.ReadCommitted };
+                var transactionOptions = new TransactionOptions 
+                {
+                    IsolationLevel = IsolationLevel.ReadCommitted 
+                };
     
                 using (var scope = new TransactionScope(TransactionScopeOption.Required,
                                                         transactionOptions,
