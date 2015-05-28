@@ -17,6 +17,11 @@ a[href^=tel] {
   color: inherit;
   text-decoration: none !important; }
 
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre; }
+
 .mobileLeft {
   width: 100%;
   height: 100%;
