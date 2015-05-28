@@ -4,10 +4,10 @@ layout: default
 
 {% assign author = site.authors[page.author] %}
 <div class="post">
-  <div class="meta">
-    <span class="author">{{ page.date | date_to_long_string }}, by {{ author.display_name }}</span>
-  </div>
-  {{ content }}
+    <div class="meta">
+        <span class="author">{{ page.date | date_to_long_string }}, by {{ author.display_name }}</span>
+    </div>
+    {{ content }}
 </div>
 
 {% include JB/setup %}
