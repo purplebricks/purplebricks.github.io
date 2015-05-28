@@ -206,7 +206,30 @@ pre {
     top: 10px; }
 
 .meta {
-  margin-bottom: 22px; }
+  margin-bottom: 11px; }
+
+.widget {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 11px;
+  margin-bottom: 11px; }
+  .widget h3 {
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .widget ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .widget ul a {
+      text-decoration: underline;
+      color: #333333; }
+      .widget ul a:hover {
+        text-decoration: none; }
+    .widget ul li + li {
+      margin-top: 11px; }
+    .widget ul.vacancies li span {
+      display: block;
+      font-size: 14px; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -327,6 +350,9 @@ pre {
     background: url('../../../../assets/themes/purplebricks/images/techGuy.png') no-repeat 50% 50%; }
     .intoPic p {
       display: none; }
+
+  .contentLeft {
+    border-right: 1px solid #ccc; }
  }
 
 /* Large Devices, Wide Screens */
