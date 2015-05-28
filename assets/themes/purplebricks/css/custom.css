@@ -21,6 +21,8 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre; }
+  pre code {
+    white-space: pre; }
 
 .mobileLeft {
   width: 100%;
