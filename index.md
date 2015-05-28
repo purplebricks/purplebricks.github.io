@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: articleList
 title: Hello World!
 tagline: Supporting tagline
 ---
