@@ -9,6 +9,7 @@ comments: true
         <span class="author">{{ page.date | date_to_long_string }}, by {{ author.display_name }}</span>
     </div>
     {{ content }}
+    <hr />
     {% if page.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
