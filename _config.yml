@@ -25,14 +25,4 @@ categories_path : /categories.html
 tags_path : /tags.html
 atom_path : /atom.xml
 rss_path : /rss.xml
-comments :
-  provider : disqus
-    disqus :
-      short_name : jekyllbootstrap
-analytics :
-  provider : google
-    google :
-       tracking_id : 'UA-48455785-3'
-  sharing :
-    provider : false
- encoding: utf-8
+encoding: utf-8
