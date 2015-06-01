@@ -1,13 +1,36 @@
 {% include top.html %}
 
-<body class="wrap">
-  {% include header.html %}
-
-  {{ content }}
-
-  {% include footer.html %}
-  {% include anchor_links.html %}
-  {% include analytics.html %}
-
+<body>
+    <div class="mobileLeft">
+        <div class="container">
+            {% include primary-nav-items.html %}
+        </div>
+    </div>
+    <div class="master container-fluid">
+        <div id="wrap">
+            {% include header.html %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center intoPic">
+                        <p>The tech team behind Purplebricks.com</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contentLeft col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                        {{ content }}
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        {% include news_contents.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+        {% include anchor_links.html %}
+    </div>
+    <div class="mobileBg"></div>
+    {% include analytics.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/bootstrap/javascripts/bootstrap.min.js"></script>
 </body>
 </html>

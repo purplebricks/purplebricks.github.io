@@ -1,18 +1,20 @@
-<header role="banner">
-  <nav class="mobile-nav show-on-mobiles">
-    {% include primary-nav-items.html %}
-  </nav>
-  <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="/">
-          <span class="sr-only">Jekyll</span>
-          <img src="/img/logo-2x.png" width="249" height="115" alt="Jekyll Logo">
-        </a>
-      </h1>
+<header class="container-fluid" id="header">
+    <div class="container">
+        <button type="button" class="navToggle visible-xs-block visible-sm-block">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar b1"></span>
+            <span class="icon-bar b2"></span>
+            <span class="icon-bar b3"></span>
+        </button>
+        <div>
+            <a href="/" class="logo pull-left">Purplebricks.com</a>
+        </div>
     </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
-      {% include primary-nav-items.html %}
+    <nav class="navbar navbar-default visible-md visible-lg">
+        <div class="container-fluid">
+            <div class="container">
+                {% include primary-nav-items.html %}
+            </div>
+        </div>
     </nav>
-  </div>
 </header>
