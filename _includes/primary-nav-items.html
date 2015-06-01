@@ -1,17 +1,14 @@
 <ul class="nav navbar-nav">
-    <li class="{% if page.overview %}current{% endif %}">
+    <li class="{% if page.overview %}active{% endif %}">
         <a href="/">Home</a>
     </li>
-    <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+    <li class="{% if page.url contains '/docs/' %}active{% endif %}">
         <a href="/docs/home/">Documentation</span></a>
     </li>
-    <li class="{% if page.author %}current{% endif %}">
+    <li class="{% if page.author %}active{% endif %}">
         <a href="/news/">News</a>
     </li>
     <li>
         <a href="/help/">Help</a>
-    </li>
-    <li>
-        <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
     </li>
 </ul>
