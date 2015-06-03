@@ -38,7 +38,7 @@ var result = await Transaction.RunTransactionAsync(async scope =>
 This allows a developer request a given action is executed in a transaction and take advantage of the error handling block. If the code succeeds then we can complete the scope and return any relevant data.
 
 To achieve this is actually pretty simple:
-{% highlight c# lineos %}
+{% highlight csharp linenos %}
 public static async Task<T> RunTransactionAsync<T>(Func<TransactionScope, Task<T>> action, CancellationToken token = new CancellationToken())
 {
     try
