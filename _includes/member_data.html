@@ -13,16 +13,17 @@
     </li>
 </ul>
 
-<p><strong>My articles:</strong></p> 
-
-{% for post in site.posts %}
-{% if post.author == page.author %}
-<article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="post-content">
-        {{ post.content | strip_html | truncatewords: 50 }}
-        <p><a href="{{ post.url }}">Read more...</a></p>
-    </div>
-</article>
-{% endif %}
-{% endfor %}
+<div class="userArticles">
+    <p class="lead">My articles:</p>
+    {% for post in site.posts %}
+    {% if post.author == page.author %}
+    <article class="newsPost">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="post-content">
+            {% include news_excerpt.html %}
+            <p><a href="{{ post.url }}">Read more...</a></p>
+        </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+</div>

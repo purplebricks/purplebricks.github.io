@@ -10,11 +10,7 @@
         <span class="author">{{ post.date | date_to_long_string }}, by <a rel="author" href="/members/{{ post.author }}" title="{{ author.name }}">{{ author.name }}</a></span>
     </div>
     <div class="post-content">
-        {% if post.showExcerpt == true %}
-        {{ post.excerpt }}
-        {% else %}
-        {{ post.content | strip_html | truncatewords: 50 }}
-        {% endif %}
+        {% include news_excerpt.html %}
         <p><a href="{{ post.url }}">Read more...</a></p>
     </div>
 </article>

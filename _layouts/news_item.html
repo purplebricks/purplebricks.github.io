@@ -5,9 +5,9 @@ layout: news
 {% assign author = site.data.members[page.author] %}
 
 <article>
+    <h1>{{ page.title }}</h1>
     <div class="meta">
         <span class="author">{{ page.date | date_to_long_string }}, by <a rel="author" href="/members/{{ page.author }}" title="{{ author.name }}">{{ author.name }}</a></span>
     </div>
-    <h1>{{ page.title }}</h1>
     {{ content }}
 </article>
