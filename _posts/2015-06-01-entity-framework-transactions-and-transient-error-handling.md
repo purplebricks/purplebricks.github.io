@@ -13,7 +13,7 @@ showExcerpt: true
     postThumb: 'https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png'
 -->
 
-In any networked environment transient errors are to be expected. It doesn't matter how good your infrastructure is, sometimes life happens. Enter the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934%28v=pandp.50%29.aspx), the block gives developers a simple way of handling transient errors, network blips, timeout errors and the like, it's very simple to use and should be used in more often.
+In any networked environment transient errors are to be expected. It doesn't matter how good your infrastructure is, sometimes life happens. Enter the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934%28v=pandp.50%29.aspx), the block gives developers a simple way of handling transient errors, network blips, timeout errors and the like, it's very simple to use and should be used more often.
 <!--more-->
 
 Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on Azure and we use Azure SQL databases. Helpfully there is a specific execution strategy which we can use out of the box, the `SqlAzureExecutionStrategy` is pretty much as you'd expect, that is until you want to use an explicit transaction. Support for explicit transactions with the strategy have not been implemented, but it is something we want to use. To that end we rolled our own helper. The helper has to perform a couple of simple tasks:
