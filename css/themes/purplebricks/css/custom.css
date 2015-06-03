@@ -3,15 +3,50 @@
   (c) 2014 Sourcey
   http://sourcey.com
 */
-.highlight {
+.code {
+  margin-bottom: 22px;
+  border-radius: 5px;
+  overflow: auto; }
+
+.highlight, .linenodiv {
+  border-radius: 5px;
   white-space: pre;
   overflow: auto;
-  margin-bottom: 11px;
   word-wrap: normal;
   /* horizontal scrolling */
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   color: #C1C2C3; }
+
+.highlighttable {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #343642; }
+
+.highlight {
+  padding: 0 20px;
+  background-color: #343642; }
+
+.linenos {
+  border-right: 1px solid #666;
+  width: 45px;
+  text-align: right;
+  padding: 0 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .linenos pre {
+    counter-reset: line-numbering;
+    border-radius: 0;
+    padding: 0;
+    white-space: pre;
+    overflow-x: auto;
+    color: #ccc;
+    width: 30px;
+    word-break: inherit;
+    word-wrap: inherit; }
 
 .highlight .hll {
   background-color: #ffc; }
@@ -71,6 +106,9 @@
   overflow-x: auto;
   word-wrap: normal; }
 
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 html, body {
   height: 100%; }
 
@@ -93,11 +131,7 @@ a[href^=tel] {
 pre {
   overflow: auto;
   word-wrap: normal;
-  white-space: pre;
-  padding: 20px;
-  margin: 0;
-  background-color: #343642;
-  border: none; }
+  white-space: pre; }
   pre code {
     white-space: pre; }
 

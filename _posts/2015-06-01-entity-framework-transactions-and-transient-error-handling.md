@@ -26,7 +26,8 @@ Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on 
 
 So before I show you the code, it's probably worth showing how the code is used:
 
-{% highlight csharp linenos %}
+<div class="code">
+{% highlight csharp linenos=table %}
 var result = await Transaction.RunTransactionAsync(async scope =>
 {
     await SomeTransationalCall();
@@ -34,11 +35,12 @@ var result = await Transaction.RunTransactionAsync(async scope =>
     return "Some Meaningful Result";
 });
 {% endhighlight %}
-
+</div>
 This allows a developer request a given action is executed in a transaction and take advantage of the error handling block. If the code succeeds then we can complete the scope and return any relevant data.
 
 To achieve this is actually pretty simple:
-{% highlight csharp linenos %}
+<div class="code">
+{% highlight csharp linenos=table %}
 public static async Task<T> RunTransactionAsync<T>(Func<TransactionScope, Task<T>> action, CancellationToken token = new CancellationToken())
 {
     try
@@ -65,4 +67,6 @@ public static async Task<T> RunTransactionAsync<T>(Func<TransactionScope, Task<T
     }
 }
 {% endhighlight %}
+</div>
+
 We now have the best of both worlds, we can have our explicit transactions and we can have transient error handling. Win!
