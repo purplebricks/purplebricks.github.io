@@ -5,7 +5,11 @@ overview: true
 ---
 
 {% for post in paginator.posts %}
-  {% include news_item_short.html %}
+  {% if post == paginator.posts.first %}
+    {% include news_item_short.html main=true %}
+  {% else %}
+    {% include news_item_short.html %}
+  {% endif %}
 {% endfor %}
 
 

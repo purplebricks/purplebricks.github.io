@@ -1,7 +1,10 @@
 @import 'customBootstrap/variables';
 @import '../bootstrap/stylesheets/bootstrap/variables';
 @import '../bootstrap/stylesheets/bootstrap/mixins';
+@import "../../../../_sass/pygments";
 $imageCdnRoot : "https://az713861.vo.msecnd.net/web-images";
+
+
 @mixin clearfix {
     &:before, &:after { content: ""; display: table; }
     &:after { clear: both; }
@@ -35,6 +38,10 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
+  padding: 20px;
+  margin: 0;
+  background-color: #343642;
+  border: none;
   code {
       white-space: pre;
   }

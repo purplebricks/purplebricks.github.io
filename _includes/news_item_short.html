@@ -1,11 +1,20 @@
 {% assign author = site.data.members[post.author] %}
-<article>
+{% assign isMain = include.main %}
+
+<article class="{% if isMain %}mainArticle{% endif %}">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">
+        {% if post.postThumb %}
+        {{ post.postThumb }}
+        {% endif %}
         <span class="author">{{ post.date | date_to_long_string }}, by <a rel="author" href="/members/{{ post.author }}" title="{{ author.name }}">{{ author.name }}</a></span>
     </div>
     <div class="post-content">
+        {% if post.showExcerpt == true %}
+        {{ post.excerpt }}
+        {% else %}
         {{ post.content | strip_html | truncatewords: 50 }}
+        {% endif %}
         <p><a href="{{ post.url }}">Read more...</a></p>
     </div>
 </article>
