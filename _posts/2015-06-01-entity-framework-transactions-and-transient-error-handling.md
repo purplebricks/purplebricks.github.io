@@ -25,19 +25,19 @@ Here at [purplebricks.com](https://www.purplebricks.com) we run our websites on 
 
 So before I show you the code, it's probably worth showing how the code is used:
 
-{% highlight c# lineos %}
-    var result = await Transaction.RunTransactionAsync(async scope =>
-    {
-        await SomeTransationalCall();
-        scope.Complete();
-        return "Some Meaningful Result";
-    });
+{% highlight csharp linenos %}
+var result = await Transaction.RunTransactionAsync(async scope =>
+{
+    await SomeTransationalCall();
+    scope.Complete();
+    return "Some Meaningful Result";
+});
 {% endhighlight %}
 
 This allows a developer request a given action is executed in a transaction and take advantage of the error handling block. If the code succeeds then we can complete the scope and return any relevant data.
 
 To achieve this is actually pretty simple:
-{% highlight c# lineos %}
+{% highlight csharp linenos %}
     public static async Task<T> RunTransactionAsync<T>(Func<TransactionScope, Task<T>> action, CancellationToken token = new CancellationToken())
     {
         try
