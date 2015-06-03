@@ -4,11 +4,6 @@
   http://sourcey.com
 */
 
-.code {
-    margin-bottom: 22px;
-    border-radius: 5px;
-    overflow: auto;
-}
 .highlight, .linenodiv {
     border-radius: 5px;
     white-space: pre; 
@@ -20,6 +15,9 @@
     width: 100%;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 22px;
+    overflow-x: auto;
+    display: block;
     background-color: #343642;
 }
 .highlight {
