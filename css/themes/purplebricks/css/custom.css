@@ -339,6 +339,17 @@ pre {
       display: block;
       font-size: 14px; }
 
+.newsPost h2 {
+  margin-top: 0;
+  font-size: 20px; }
+  .newsPost h2 a {
+    color: #000; }
+.newsPost .post-meta {
+  margin-bottom: 11px; }
+.newsPost + .newsPost {
+  padding-top: 11px;
+  border-top: 1px solid #bbb; }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .mobileLeft {

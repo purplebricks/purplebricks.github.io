@@ -261,6 +261,23 @@ pre {
     }
 }
 
+.newsPost {
+    h2 {
+        margin-top: 0;
+        font-size: $font-size-large;
+        a {
+            color: $gray-base;
+        }
+    }
+    .post-meta {
+        margin-bottom: $line-height-computed/2;
+    }
+    & + .newsPost {
+        padding-top: $line-height-computed/2;
+        border-top: 1px solid #bbb;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .mobileLeft {
