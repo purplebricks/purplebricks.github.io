@@ -3,8 +3,7 @@ layout: news_item
 title: 'Entity Framework Transactions and Transient Error Handling'
 date: 2015-05-01 14:00:00
 author: rob
-tags : [entityframework, transactions, transient errors]
-categories: [entityframework]
+tags: [entity-framework, transactions, transient-errors]
 showExcerpt: true
 ---
 
