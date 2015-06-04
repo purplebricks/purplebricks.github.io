@@ -1,6 +1,7 @@
 {% assign author = site.data.members[post.author] %}
 {% assign isMain = include.main %}
 
+
 <article class="newsPost{% if isMain %} mainArticle{% endif %}">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">
@@ -12,5 +13,8 @@
     <div class="post-content">
         {% include news_excerpt.html %}
         <p><a href="{{ post.url }}">Read more...</a></p>
+        <div class="tagged">
+            <p id="post-meta">Posted {{ category_content }}{{ tags_content }}</p>
+        </div>
     </div>
 </article>
