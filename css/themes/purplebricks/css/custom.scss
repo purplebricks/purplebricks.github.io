@@ -2,15 +2,25 @@
 @import '../bootstrap/stylesheets/bootstrap/variables';
 @import '../bootstrap/stylesheets/bootstrap/mixins';
 @import "../../../../_sass/pygments";
+@import "../../../../_sass/font-awesome";
 $imageCdnRoot : "https://az713861.vo.msecnd.net/web-images";
-
 
 @mixin clearfix {
     &:before, &:after { content: ""; display: table; }
     &:after { clear: both; }
     *zoom: 1;
 }
-
+@mixin dropCaps {
+    &:first-letter { 
+        float: left; 
+        font-size: 75px; 
+        line-height: 60px; 
+        padding-top: 4px; 
+        padding-right: 8px; 
+        padding-left: 3px; 
+        font-family: Georgia; 
+    }
+}
 html,
 body {
   height: 100%;
@@ -277,6 +287,62 @@ pre {
         border-top: 1px solid #bbb;
     }
 }
+.post .meta + p {
+    @include dropCaps;
+}.newsArticle {
+     h1 {
+         color: $brand-secondary;
+     }
+ }
+.memberPage {
+    h1  {
+        margin-bottom: 0;
+    }
+    .title {
+        color: $brand-secondary;
+    }
+    .photo {
+        float: right;
+        img {
+            border-radius: 5px;
+        }
+    }
+    .bio {
+        p:first-child {
+            @include dropCaps;
+        }
+    }
+    .social {
+        margin: -$line-height-computed/2 0 $line-height-computed;
+        padding: 0;
+        list-style-type: none;
+        .fa {
+            font-size: ceil($font-size-base * 1.2);
+        }
+        .fa-twitter {
+            color: #55acee;
+        }
+        .fa-github {
+            color: $gray-base;
+        }
+        .fa-envelope-o {
+            color: #ccc;
+        }
+        li {
+            margin-left: $line-height-computed/4;
+            display: inline-block;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    .userArticles {
+        margin-top: $line-height-computed;
+        padding-top: $line-height-computed/2;
+        border-top: 1px dashed #ccc
+    }
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
