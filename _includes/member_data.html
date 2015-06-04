@@ -24,12 +24,13 @@
             </li>
             {% endif %}
         </ul>
+        {% if author.bio %}
         <div class="bio">
             <p>
-                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-                Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+                {{ author.bio }}
             </p>
         </div>
+        {% endif %}
     </div>
     
     <div class="userArticles">
