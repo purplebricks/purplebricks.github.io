@@ -238,6 +238,15 @@ pre {
 .meta {
     margin-bottom: $line-height-computed/2;
 }
+.tagged {
+    margin-top: $line-height-computed;
+    .label a {
+        color: $body-bg;
+    }
+    .fa {
+        color: #ccc;
+    }
+}
 
 .widget {
     border-bottom: 1px solid #ccc;
