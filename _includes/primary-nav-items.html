@@ -2,6 +2,15 @@
     <li class="{% if page.overview %}active{% endif %}">
         <a href="/">Home</a>
     </li>
+    <li class="{% if page.url contains '/culture/' %}active{% endif %}">
+        <a href="/culture/">Culture</a>
+    </li>
+    <li class="{% if page.url contains '/category/' %}active{% endif %}">
+        <a href="/category/">Categories</a>
+    </li>
+    <li>
+        <a href="https://github.com/purplebricks">Github</a>
+    </li>
     <!--li class="{% if page.url contains '/docs/' %}active{% endif %}">
         <a href="/docs/home/">Documentation</span></a>
     </!--li>-->

@@ -6,8 +6,6 @@ collections:
     output: true
   members:
     output: true
-  categories:
-    output: true
   tag:
     output: true
 # This is the default format.
