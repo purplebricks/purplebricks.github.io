@@ -146,6 +146,9 @@
 .fa-tags:before {
   content: "\f02c"; }
 
+.fa-stack-overflow:before {
+  content: "\f16c"; }
+
 html, body {
   height: 100%; }
 
@@ -435,6 +438,8 @@ pre {
     color: #55acee; }
   .memberPage .social .fa-github {
     color: #000; }
+  .memberPage .social .fa-stack-overflow {
+    color: #ff9900; }
   .memberPage .social .fa-envelope-o {
     color: #ccc; }
   .memberPage .social li {
@@ -446,6 +451,9 @@ pre {
   margin-top: 22px;
   padding-top: 11px;
   border-top: 1px dashed #ccc; }
+
+.categoriesList h2 {
+  margin-top: 0; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {

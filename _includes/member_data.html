@@ -18,6 +18,11 @@
                 <a href="https://github.com/{{ author.github }}" class="post-author"><span class="fa fa-github"></span></a>
             </li>
             {% endif %}
+            {% if author.stackoverflow %}
+            <li>
+                <a href="http://stackoverflow.com/users/{{ author.stackoverflow }}" class="post-author"><span class="fa fa-stack-overflow"></span></a>
+            </li>
+            {% endif %}
             {% if author.twitter %}
             <li>
                 <a href="https://twitter.com/{{ author.twitter }}"><span class="fa fa-twitter"></span></a>

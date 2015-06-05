@@ -334,6 +334,9 @@ pre {
         .fa-github {
             color: $gray-base;
         }
+        .fa-stack-overflow {
+            color: #ff9900;
+        }
         .fa-envelope-o {
             color: #ccc;
         }
@@ -351,7 +354,11 @@ pre {
         border-top: 1px dashed #ccc
     }
 }
-
+.categoriesList {
+    h2 {
+        margin-top: 0;
+    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
