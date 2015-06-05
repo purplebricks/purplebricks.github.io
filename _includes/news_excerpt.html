@@ -1,0 +1,5 @@
+{% if post.showExcerpt == true %}
+  {{ post.excerpt | markdownify }}
+{% else %}
+  {{ post.content | strip_html | markdownify| truncatewords: 50 }}
+{% endif %}

@@ -4,8 +4,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../../../../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../../../../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../../../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../../../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../../../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,4 +22,22 @@
 }
 .fa-pencil:before {
   content: "\f040";
+}
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-twitter:before {
+  content: "\f099"; 
+}
+
+.fa-facebook:before {
+  content: "\f09a"; 
+}
+
+.fa-envelope-o:before {
+  content: "\f003"; 
+}
+
+.fa-tags:before {
+    content: "\f02c"; 
 }

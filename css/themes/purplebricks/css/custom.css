@@ -1,4 +1,152 @@
-﻿html, body {
+﻿/* 
+  Darkly Pygments Theme
+  (c) 2014 Sourcey
+  http://sourcey.com
+*/
+.highlight, .linenodiv {
+  border-radius: 5px;
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal;
+  /* horizontal scrolling */
+  color: #C1C2C3; }
+
+.highlighttable {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 22px;
+  overflow-x: auto;
+  display: block;
+  background-color: #343642; }
+
+.highlight {
+  padding: 0 20px;
+  background-color: #343642; }
+
+.linenos {
+  border-right: 1px solid #666;
+  width: 45px;
+  text-align: right;
+  padding: 0 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .linenos pre {
+    counter-reset: line-numbering;
+    border-radius: 0;
+    padding: 0;
+    white-space: pre;
+    overflow-x: auto;
+    color: #ccc;
+    width: 30px;
+    word-break: inherit;
+    word-wrap: inherit; }
+
+.highlight .hll {
+  background-color: #ffc; }
+
+.highlight .gd {
+  color: #2e3436;
+  background-color: #0e1416; }
+
+.highlight .gr {
+  color: #eeeeec;
+  background-color: #c00; }
+
+.highlight .gi {
+  color: #babdb6;
+  background-color: #1f2b2d; }
+
+.highlight .go {
+  color: #2c3032;
+  background-color: #2c3032; }
+
+.highlight .kt {
+  color: #e3e7df; }
+
+.highlight .ni {
+  color: #888a85; }
+
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #8D9684; }
+
+.highlight .err, .highlight .g, .highlight .l, .highlight .n, .highlight .x, .highlight .p, .highlight .ge, .highlight .gp, .highlight .gs, .highlight .gt, .highlight .ld, .highlight .s, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nl, .highlight .nn, .highlight .nx, .highlight .py, .highlight .ow, .highlight .w, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss, .highlight .bp {
+  color: #C1C2C3; }
+
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .nt {
+  color: #729fcf; }
+
+.highlight .cp, .highlight .gh, .highlight .gu, .highlight .na, .highlight .nf {
+  color: #E9A94B; }
+
+.highlight .m, .highlight .nb, .highlight .no, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
+  color: #8ae234; }
+
+.highlight .o {
+  color: #989DAA; }
+
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #fff; }
+
+.highlight .lineno {
+  color: #ccc;
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ccc; }
+
+.highlight pre code {
+  display: block;
+  white-space: pre;
+  overflow-x: auto;
+  word-wrap: normal; }
+
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../../../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../../../../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../../../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../../../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../../../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-link:before {
+  content: "\f0c1"; }
+
+.fa-pencil:before {
+  content: "\f040"; }
+
+.fa-github:before {
+  content: "\f09b"; }
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-facebook:before {
+  content: "\f09a"; }
+
+.fa-envelope-o:before {
+  content: "\f003"; }
+
+.fa-tags:before {
+  content: "\f02c"; }
+
+html, body {
   height: 100%; }
 
 body {
@@ -208,6 +356,13 @@ pre {
 .meta {
   margin-bottom: 11px; }
 
+.tagged {
+  margin-top: 22px; }
+  .tagged .label a {
+    color: #fff; }
+  .tagged .fa {
+    color: #ccc; }
+
 .widget {
   border-bottom: 1px solid #ccc;
   padding-bottom: 11px;
@@ -230,6 +385,67 @@ pre {
     .widget ul.vacancies li span {
       display: block;
       font-size: 14px; }
+
+.newsPost h2 {
+  margin-top: 0;
+  font-size: 20px; }
+  .newsPost h2 a {
+    color: #000; }
+.newsPost .post-meta {
+  margin-bottom: 11px; }
+.newsPost + .newsPost {
+  padding-top: 11px;
+  border-top: 1px solid #bbb; }
+
+.post .meta + p:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Georgia; }
+
+.newsArticle h1 {
+  color: #990099; }
+
+.memberPage h1 {
+  margin-bottom: 0; }
+.memberPage .title {
+  color: #990099; }
+.memberPage .photo {
+  float: right; }
+  .memberPage .photo img {
+    border-radius: 5px; }
+.memberPage .bio p:first-child:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Georgia; }
+.memberPage .social {
+  margin: -11px 0 22px;
+  padding: 0;
+  list-style-type: none; }
+  .memberPage .social .fa {
+    font-size: 20px; }
+  .memberPage .social .fa-twitter {
+    color: #55acee; }
+  .memberPage .social .fa-github {
+    color: #000; }
+  .memberPage .social .fa-envelope-o {
+    color: #ccc; }
+  .memberPage .social li {
+    margin-left: 5.5px;
+    display: inline-block; }
+    .memberPage .social li:first-child {
+      margin-left: 0; }
+.memberPage .userArticles {
+  margin-top: 22px;
+  padding-top: 11px;
+  border-top: 1px dashed #ccc; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {

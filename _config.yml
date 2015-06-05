@@ -6,6 +6,10 @@ collections:
     output: true
   members:
     output: true
+  categories:
+    output: true
+  tag:
+    output: true
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
@@ -31,3 +35,4 @@ encoding: utf-8
 paginate: 5
 paginate_path: "/blog/page:num/"
 google_analytics_id: UA-48455785-3
+excerpt_separator: <!--more-->
