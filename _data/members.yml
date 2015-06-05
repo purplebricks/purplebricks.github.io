@@ -1,12 +1,10 @@
 rob:
   name: Rob White
-  title: Lead Web Developer
+  title: Lead Developer
   photo: https://github.com/ilivewithian.png
   twitter: ilivewithian
   github: ilivewithian
-  bio: "Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, 
-        aliquam sit amet justo nunc tempor, metus vel. Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum 
-        tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante..."
+  bio: "<del>I test therefore I am</del> <del>I TDD therefore I am</del> <del>I get a good nights sleep therefore I am</del> <del>I eat bacon therefore I am</del> Hi, I'm Rob, I make things, it's fun making things. That is all."
 
 kasperoo:
   name: Kacper Lebiedziewicz
