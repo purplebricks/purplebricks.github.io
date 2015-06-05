@@ -320,11 +320,11 @@ pre {
         background-image: url("https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@2x-p8-3.png");
         background-size: 243px 225px; } }
 
-.intoPic {
+.introPic {
   padding-bottom: 22px;
   margin-bottom: 22px;
   border-bottom: 1px solid #bbb; }
-  .intoPic p {
+  .introPic p {
     color: #550066;
     font-weight: 400;
     font-size: 26px;
@@ -561,11 +561,19 @@ pre {
     #header .dropdown-menu > li > a:hover, #header .dropdown-menu > li > a:focus {
       color: #990099; }
 
-  .intoPic {
-    height: 250px;
-    background: url('../images/techGuy.png') no-repeat 50% 50%; }
-    .intoPic p {
-      display: none; }
+  .introPic {
+    height: 250px; }
+    .introPic .person {
+      float: left;
+      margin-left: 30px;
+      width: 316px;
+      height: 215px;
+      background: url('../images/logoPerson.png') no-repeat 0 0; }
+    .introPic p {
+      float: left;
+      font-size: 30px;
+      font-weight: 300;
+      margin: 80px 0 0 50px; }
 
   .contentLeft {
     border-right: 1px solid #ccc; }
@@ -582,4 +590,7 @@ pre {
   #header .nav > li > a {
     padding-left: 20px;
     padding-right: 20px; }
+
+  .introPic .person {
+    margin-left: 150px; }
  }

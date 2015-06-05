@@ -200,7 +200,7 @@ pre {
         @include img-retina("#{$imageCdnRoot}/marketingWebsite/global/siteCore@1x-p8-2.png", "#{$imageCdnRoot}/marketingWebsite/global/siteCore@2x-p8-3.png", 243px, 225px);
     }
 }
-.intoPic {
+.introPic {
     padding-bottom: $line-height-computed;
     margin-bottom: $line-height-computed;
     border-bottom: 1px solid #bbb;
@@ -497,11 +497,19 @@ pre {
             color: $brand-secondary;
         }
     }
-   .intoPic {
+   .introPic {
        height: 250px;
-       background: url('../images/techGuy.png') no-repeat 50% 50%;
+       .person {
+           float: left;
+           margin-left: 30px;
+           @include size(316px, 215px);
+           background: url('../images/logoPerson.png') no-repeat 0 0;
+       }
        p {
-           display: none;
+           float: left;
+           font-size: $font-size-h1;
+           font-weight: 300;
+           margin: 80px 0 0 50px;
        }
    }
    .contentLeft {
@@ -526,5 +534,9 @@ pre {
             padding-right: 20px;
         }
     }
-    
+    .introPic {
+       .person {
+           margin-left: 150px;
+       }
+   }
 }
