@@ -569,6 +569,58 @@ pre {
     #header .dropdown-menu > li > a:hover, #header .dropdown-menu > li > a:focus {
       color: #990099; }
 
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0; }
+
+    50% {
+      opacity: 0.3; }
+
+    100% {
+      opacity: 1; } }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; }
+
+    50% {
+      opacity: 0.3; }
+
+    100% {
+      opacity: 1; } }
+
+  @-webkit-keyframes fadeInOut {
+    0% {
+      opacity: 0; }
+
+    25% {
+      opacity: 0.8; }
+
+    50% {
+      opacity: 1; }
+
+    75% {
+      opacity: 0.8; }
+
+    100% {
+      opacity: 0; } }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; }
+
+    25% {
+      opacity: 0.8; }
+
+    50% {
+      opacity: 1; }
+
+    75% {
+      opacity: 0.8; }
+
+    100% {
+      opacity: 0; } }
+
   .introPic {
     height: 250px; }
     .introPic .person {
@@ -591,12 +643,16 @@ pre {
       .introPic .person p {
         color: #fff;
         margin: 0;
-        font-size: 13px; }
+        font-size: 13px;
+        -webkit-animation: fadeIn 0.2s 0.9s 1 normal backwards;
+                animation: fadeIn 0.2s 0.9s 1 normal backwards; }
       .introPic .person .cursor {
         display: block;
         width: 6px;
         height: 13px;
-        background: #fff; }
+        background: #fff;
+        -webkit-animation: fadeInOut 0.8s 1.3s infinite normal backwards;
+                animation: fadeInOut 0.8s 1.3s infinite normal backwards; }
     .introPic .main {
       float: left;
       font-size: 30px;

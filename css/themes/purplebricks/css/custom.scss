@@ -504,6 +504,18 @@ pre {
             color: $brand-secondary;
         }
     }
+    @keyframes fadeIn {
+        0%   { opacity: 0; }
+        50%   { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
+    @keyframes fadeInOut {
+        0%   { opacity: 0; }
+        25%   { opacity: 0.8; }
+        50% { opacity: 1; }
+        75%   { opacity: 0.8; }
+        100%   { opacity: 0; }
+    }
    .introPic {
        height: 250px;
        .person {
@@ -525,11 +537,13 @@ pre {
                color: $body-bg;
                margin: 0;
                font-size: floor($font-size-base * 0.85);
+               animation: fadeIn .2s .9s 1 normal backwards;
            }
            .cursor {
                display: block;
                @include size(floor(($font-size-base * 0.85)/2) ,floor($font-size-base * 0.85));
                background: $body-bg;
+               animation: fadeInOut .8s 1.3s infinite normal backwards,
            }
        }
        .main {
