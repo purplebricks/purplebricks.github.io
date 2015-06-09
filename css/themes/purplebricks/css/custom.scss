@@ -204,7 +204,7 @@ pre {
     padding-bottom: $line-height-computed;
     margin-bottom: $line-height-computed;
     border-bottom: 1px solid #bbb;
-    p {
+    .main {
         color: $brand-primary;
         font-weight: 400;
         font-size: $font-size-h2;
@@ -508,11 +508,31 @@ pre {
        height: 250px;
        .person {
            float: left;
+           position: relative;
+           text-align: left;
            margin-left: 30px;
            @include size(316px, 215px);
-           background: url('../images/logoPerson.png') no-repeat 0 0;
+           background: url('../images/logoPersonBlank.png') no-repeat 0 0;
+           .text {
+                position: absolute;
+                transform: rotateY(10deg);
+                top: 47px;
+                left: 63px;
+                overflow: hidden;
+                @include size(62px, 60px);
+           }
+           p {
+               color: $body-bg;
+               margin: 0;
+               font-size: floor($font-size-base * 0.85);
+           }
+           .cursor {
+               display: block;
+               @include size(floor(($font-size-base * 0.85)/2) ,floor($font-size-base * 0.85));
+               background: $body-bg;
+           }
        }
-       p {
+       .main {
            float: left;
            font-size: $font-size-h1;
            font-weight: 300;

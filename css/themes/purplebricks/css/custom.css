@@ -327,7 +327,7 @@ pre {
   padding-bottom: 22px;
   margin-bottom: 22px;
   border-bottom: 1px solid #bbb; }
-  .introPic p {
+  .introPic .main {
     color: #550066;
     font-weight: 400;
     font-size: 26px;
@@ -573,11 +573,31 @@ pre {
     height: 250px; }
     .introPic .person {
       float: left;
+      position: relative;
+      text-align: left;
       margin-left: 30px;
       width: 316px;
       height: 215px;
-      background: url('../images/logoPerson.png') no-repeat 0 0; }
-    .introPic p {
+      background: url('../images/logoPersonBlank.png') no-repeat 0 0; }
+      .introPic .person .text {
+        position: absolute;
+        -webkit-transform: rotateY(10deg);
+                transform: rotateY(10deg);
+        top: 47px;
+        left: 63px;
+        overflow: hidden;
+        width: 62px;
+        height: 60px; }
+      .introPic .person p {
+        color: #fff;
+        margin: 0;
+        font-size: 13px; }
+      .introPic .person .cursor {
+        display: block;
+        width: 6px;
+        height: 13px;
+        background: #fff; }
+    .introPic .main {
       float: left;
       font-size: 30px;
       font-weight: 300;
