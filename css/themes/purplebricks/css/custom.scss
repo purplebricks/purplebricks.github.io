@@ -362,6 +362,11 @@ pre {
         margin-top: 0;
     }
 }
+.categoryList {
+    h1 span {
+        color: $brand-secondary;
+    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {

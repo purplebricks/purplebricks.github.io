@@ -457,6 +457,9 @@ pre {
 .categoriesList h2 {
   margin-top: 0; }
 
+.categoryList h1 span {
+  color: #990099; }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .mobileLeft {
