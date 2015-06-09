@@ -535,15 +535,25 @@ pre {
            }
            p {
                color: $body-bg;
+               line-height: 14px;
                margin: 0;
                font-size: floor($font-size-base * 0.85);
-               animation: fadeIn .2s .9s 1 normal backwards;
+               &:first-child {
+                   animation: fadeIn .2s .9s 1 normal backwards;
+                   & + p {
+                       animation: fadeIn .2s 1.3s 1 normal backwards;
+                       & + p {
+                           animation: fadeIn .2s 1.7s 1 normal backwards;
+                       }
+                   }
+               }
+               
            }
            .cursor {
                display: block;
                @include size(floor(($font-size-base * 0.85)/2) ,floor($font-size-base * 0.85));
                background: $body-bg;
-               animation: fadeInOut .8s 1.3s infinite normal backwards,
+               animation: fadeInOut .8s 2s infinite normal backwards,
            }
        }
        .main {

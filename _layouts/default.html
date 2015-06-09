@@ -15,7 +15,11 @@
                         <div class="person">
                             <div class="text">
                                 <div class="customText">
-                                    <p>&#60;HI</p>
+                                    {% if page.screenText %}
+                                      {{ page.screenText }}
+                                    {% else %}
+                                        <p>&#60;HI</p>
+                                    {% endif %}
                                 </div>
                                 <span class="cursor"></span>
                             </div>

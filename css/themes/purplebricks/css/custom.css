@@ -642,17 +642,25 @@ pre {
         height: 60px; }
       .introPic .person p {
         color: #fff;
+        line-height: 14px;
         margin: 0;
-        font-size: 13px;
-        -webkit-animation: fadeIn 0.2s 0.9s 1 normal backwards;
-                animation: fadeIn 0.2s 0.9s 1 normal backwards; }
+        font-size: 13px; }
+        .introPic .person p:first-child {
+          -webkit-animation: fadeIn 0.2s 0.9s 1 normal backwards;
+                  animation: fadeIn 0.2s 0.9s 1 normal backwards; }
+          .introPic .person p:first-child + p {
+            -webkit-animation: fadeIn 0.2s 1.3s 1 normal backwards;
+                    animation: fadeIn 0.2s 1.3s 1 normal backwards; }
+            .introPic .person p:first-child + p + p {
+              -webkit-animation: fadeIn 0.2s 1.7s 1 normal backwards;
+                      animation: fadeIn 0.2s 1.7s 1 normal backwards; }
       .introPic .person .cursor {
         display: block;
         width: 6px;
         height: 13px;
         background: #fff;
-        -webkit-animation: fadeInOut 0.8s 1.3s infinite normal backwards;
-                animation: fadeInOut 0.8s 1.3s infinite normal backwards; }
+        -webkit-animation: fadeInOut 0.8s 2s infinite normal backwards;
+                animation: fadeInOut 0.8s 2s infinite normal backwards; }
     .introPic .main {
       float: left;
       font-size: 30px;
