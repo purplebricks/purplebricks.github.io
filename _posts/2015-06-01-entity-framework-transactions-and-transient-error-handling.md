@@ -6,7 +6,7 @@ author: rob
 category: programming
 tags: [entity-framework, transactions, transient-errors]
 showExcerpt: true
-screenText: "<p>&#60;ERROR</p><p>&#60;RETRY</p><p>&#60;WIN</p>"
+screenText: "<p>&#62;ERROR</p><p>&#62;RETRY</p><p>&#62;WIN!!</p>"
 ---
 
 <!--
