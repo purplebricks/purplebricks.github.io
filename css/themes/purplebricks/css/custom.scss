@@ -204,6 +204,9 @@ pre {
     padding-bottom: $line-height-computed;
     margin-bottom: $line-height-computed;
     border-bottom: 1px solid #bbb;
+    .person .text {
+        display: none;
+    }
     .main {
         color: $brand-primary;
         font-weight: 400;
@@ -526,28 +529,30 @@ pre {
            @include size(316px, 215px);
            background: url('../images/logoPersonBlank.png') no-repeat 0 0;
            .text {
+               display: block;
                 position: absolute;
                 transform: rotateY(10deg);
                 top: 47px;
                 left: 63px;
                 overflow: hidden;
                 @include size(62px, 60px);
+                p {
+                    &:first-child {
+                       animation: fadeIn .2s .9s 1 normal backwards;
+                       & + p {
+                           animation: fadeIn .2s 1.3s 1 normal backwards;
+                           & + p {
+                               animation: fadeIn .2s 1.7s 1 normal backwards;
+                           }
+                       }
+                   }
+                }
            }
            p {
                color: $body-bg;
                line-height: 14px;
                margin: 0;
                font-size: floor($font-size-base * 0.85);
-               &:first-child {
-                   animation: fadeIn .2s .9s 1 normal backwards;
-                   & + p {
-                       animation: fadeIn .2s 1.3s 1 normal backwards;
-                       & + p {
-                           animation: fadeIn .2s 1.7s 1 normal backwards;
-                       }
-                   }
-               }
-               
            }
            .cursor {
                display: block;

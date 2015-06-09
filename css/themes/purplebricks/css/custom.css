@@ -327,6 +327,8 @@ pre {
   padding-bottom: 22px;
   margin-bottom: 22px;
   border-bottom: 1px solid #bbb; }
+  .introPic .person .text {
+    display: none; }
   .introPic .main {
     color: #550066;
     font-weight: 400;
@@ -632,6 +634,7 @@ pre {
       height: 215px;
       background: url('../images/logoPersonBlank.png') no-repeat 0 0; }
       .introPic .person .text {
+        display: block;
         position: absolute;
         -webkit-transform: rotateY(10deg);
                 transform: rotateY(10deg);
@@ -640,20 +643,20 @@ pre {
         overflow: hidden;
         width: 62px;
         height: 60px; }
+        .introPic .person .text p:first-child {
+          -webkit-animation: fadeIn 0.2s 0.9s 1 normal backwards;
+                  animation: fadeIn 0.2s 0.9s 1 normal backwards; }
+          .introPic .person .text p:first-child + p {
+            -webkit-animation: fadeIn 0.2s 1.3s 1 normal backwards;
+                    animation: fadeIn 0.2s 1.3s 1 normal backwards; }
+            .introPic .person .text p:first-child + p + p {
+              -webkit-animation: fadeIn 0.2s 1.7s 1 normal backwards;
+                      animation: fadeIn 0.2s 1.7s 1 normal backwards; }
       .introPic .person p {
         color: #fff;
         line-height: 14px;
         margin: 0;
         font-size: 13px; }
-        .introPic .person p:first-child {
-          -webkit-animation: fadeIn 0.2s 0.9s 1 normal backwards;
-                  animation: fadeIn 0.2s 0.9s 1 normal backwards; }
-          .introPic .person p:first-child + p {
-            -webkit-animation: fadeIn 0.2s 1.3s 1 normal backwards;
-                    animation: fadeIn 0.2s 1.3s 1 normal backwards; }
-            .introPic .person p:first-child + p + p {
-              -webkit-animation: fadeIn 0.2s 1.7s 1 normal backwards;
-                      animation: fadeIn 0.2s 1.7s 1 normal backwards; }
       .introPic .person .cursor {
         display: block;
         width: 6px;
