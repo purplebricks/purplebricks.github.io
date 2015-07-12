@@ -128,7 +128,7 @@ For instance when a cup of coffee appears on the screen, we use a simple keyfram
 
 ![CSS3 animation](/images/animating-purplebricks-frontend/mug.gif)
 
-For majority of fade-ins and custom animations we use velocity.js. It's a fantastic little library that is much faster at animating DOM elements than jQuery. It also has cool set of predefined transitions which we sporadically use. Check it out here! We got so inspired by it's performance that we now run all our resize/scroll events using only two main events hooked in to main app on the entire website. I mean, who would like to create countless window.resize or window.onScroll events all over the place. This way our page performance is much better than before.
+For majority of fade-ins and custom animations we use velocity.js. It's a fantastic little library that is much faster at animating DOM elements than jQuery. It also has cool set of predefined transitions which we sporadically use. Check it out [here](http://julian.com/research/velocity/)! We got so inspired by it's performance that we now run all our resize/scroll events using only two main events hooked in to main app on the entire website. I mean, who would like to create countless window.resize or window.onScroll events all over the place. This way our page performance is much better than before.
 
 **There are other things that the controller is doing:**
 
