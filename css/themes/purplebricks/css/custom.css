@@ -104,8 +104,14 @@
   word-wrap: normal; }
 
 /* Small Devices, Tablets */
+@media only screen and (min-width: 768px) { }
+
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) { }
+
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) { }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -219,7 +225,7 @@ pre {
       color: #fff;
       background-color: #550066; }
   .mobileLeft a {
-    color: gray; }
+    color: #808080; }
 
 .master {
   position: relative;
@@ -264,7 +270,8 @@ pre {
   background-color: #333333;
   border: 0;
   outline: 0;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
   -webkit-transform: translateZ(0);
           transform: translateZ(0); }
   .navToggle .icon-bar {
@@ -275,7 +282,8 @@ pre {
     width: 20px;
     height: 2px;
     border-radius: 1px;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
     position: absolute;
     left: 50%;
     margin-left: -10px;
@@ -288,18 +296,22 @@ pre {
 .mOpen .navToggle {
   z-index: 10000;
   background-color: #990099;
-  transition: background-color 0.3s ease; }
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease; }
   .mOpen .navToggle .b3 {
     opacity: 0;
     filter: alpha(opacity=0); }
   .mOpen .navToggle .icon-bar {
-    transition: all 0.3s ease; }
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
   .mOpen .navToggle .b1 {
     top: 21px;
     -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
   .mOpen .navToggle .b2 {
     -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
 
 #header {
@@ -413,6 +425,8 @@ pre {
 
 .newsArticle h1 {
   color: #990099; }
+.newsArticle img {
+  max-width: 100%; }
 
 .memberPage h1 {
   margin-bottom: 0; }
@@ -469,13 +483,10 @@ pre {
     .mobileLeft li a {
       padding: 23px 15px 23px 25px;
       font-size: 20px; }
-
   .master .masterContainer {
     padding-top: 75px; }
-
   .mobileBg {
     height: 75px; }
-
   .navToggle {
     margin-right: 15px;
     width: 75px;
@@ -490,10 +501,8 @@ pre {
       top: 35px; }
     .navToggle .b3 {
       top: 48px; }
-
   .mOpen .navToggle .b1 {
     top: 35px; }
-
   #header {
     margin-bottom: 22px;
     width: 100%;
@@ -528,52 +537,10 @@ pre {
       margin: 20px 0 0 0;
       background-position: -58px -8px; }
     #header .btn {
-      margin-top: 20px; }
- }
+      margin-top: 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  .master .masterContainer {
-    padding-top: 125px;
-    padding-bottom: 60px; }
-    .master .masterContainer > .row {
-      padding-bottom: 60px; }
-    .master .masterContainer > .row:last-child {
-      padding-bottom: 0; }
-
-  #header {
-    border-bottom: 0;
-    height: 130px; }
-    #header > .container {
-      width: 920px; }
-    #header .navbar {
-      margin-top: 16px;
-      border-radius: 0;
-      border-left: 0;
-      border-right: 0; }
-    #header .navbar-default .navbar-nav > .active > a, #header .navbar-default .navbar-nav > .active > a:hover, #header .navbar-default .navbar-nav > .active > a:focus {
-      color: #550066;
-      font-weight: 600;
-      background-color: transparent; }
-    #header .navbar .container {
-      width: 940px; }
-    #header .navbar-default {
-      border-top: 2px solid #550066;
-      background-color: #eaeaea; }
-    #header .navbar-nav {
-      width: 840px;
-      float: none;
-      margin: 0 auto; }
-      #header .navbar-nav > li > a {
-        text-transform: uppercase; }
-    #header .dropdown-menu > li > a {
-      padding: 6px 20px; }
-    #header .nav > li > a {
-      padding-left: 10px;
-      padding-right: 10px; }
-    #header .dropdown-menu > li > a:hover, #header .dropdown-menu > li > a:focus {
-      color: #990099; }
-
   @-webkit-keyframes fadeIn {
     0% {
       opacity: 0; }
@@ -583,7 +550,6 @@ pre {
 
     100% {
       opacity: 1; } }
-
   @keyframes fadeIn {
     0% {
       opacity: 0; }
@@ -626,6 +592,45 @@ pre {
     100% {
       opacity: 0; } }
 
+  .master .masterContainer {
+    padding-top: 125px;
+    padding-bottom: 60px; }
+    .master .masterContainer > .row {
+      padding-bottom: 60px; }
+    .master .masterContainer > .row:last-child {
+      padding-bottom: 0; }
+  #header {
+    border-bottom: 0;
+    height: 130px; }
+    #header > .container {
+      width: 920px; }
+    #header .navbar {
+      margin-top: 16px;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0; }
+    #header .navbar-default .navbar-nav > .active > a, #header .navbar-default .navbar-nav > .active > a:hover, #header .navbar-default .navbar-nav > .active > a:focus {
+      color: #550066;
+      font-weight: 600;
+      background-color: transparent; }
+    #header .navbar .container {
+      width: 940px; }
+    #header .navbar-default {
+      border-top: 2px solid #550066;
+      background-color: #eaeaea; }
+    #header .navbar-nav {
+      width: 840px;
+      float: none;
+      margin: 0 auto; }
+      #header .navbar-nav > li > a {
+        text-transform: uppercase; }
+    #header .dropdown-menu > li > a {
+      padding: 6px 20px; }
+    #header .nav > li > a {
+      padding-left: 10px;
+      padding-right: 10px; }
+    #header .dropdown-menu > li > a:hover, #header .dropdown-menu > li > a:focus {
+      color: #990099; }
   .introPic {
     height: 250px; }
     .introPic .person {
@@ -672,10 +677,8 @@ pre {
       font-size: 30px;
       font-weight: 300;
       margin: 80px 0 0 50px; }
-
   .contentLeft {
-    border-right: 1px solid #ccc; }
- }
+    border-right: 1px solid #ccc; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -688,7 +691,5 @@ pre {
   #header .nav > li > a {
     padding-left: 20px;
     padding-right: 20px; }
-
   .introPic .person {
-    margin-left: 150px; }
- }
+    margin-left: 150px; } }
