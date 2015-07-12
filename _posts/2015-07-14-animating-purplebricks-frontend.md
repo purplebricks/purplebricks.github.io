@@ -122,7 +122,9 @@ if (animations && animations.length > 0) {
 
 As you can see, we can pass any function to run along the fade-in. All we need to do in the front end is to add a data attribute with the name of a function next to our animated class. Inside those mini functions we have completely isolated logic for each individual animation. Setting elements to rotate with intervals, fade in a sequence of children elements, etc. All the timing and animation execution is happening in the core animation controller and all these mini components work together on top of it to make it much more exciting. This way, whatever happens to front end, we only have to amend the custom animation function, and never think about where it is located in the DOM.
 
-We also use css3 animations. Remember the animated class? when the element is animated, it will receive an additional class called animateNow. We have selectors that target various divs with it and use transitions and all the other great css3 motion logic. For instance when a cup of coffee appears on the screen, we use a simple keyframe selector to make the steam ‘puff' from the mug.
+We also use css3 animations. Remember the animated class? when the element is animated, it will receive an additional class called animateNow. 
+We have selectors that target various divs with it and use transitions and all the other great css3 motion logic. 
+For instance when a cup of coffee appears on the screen, we use a simple keyframe selector to make the steam 'puff' from the mug.
 
 ![CSS3 animation](/images/animating-purplebricks-frontend/mug.gif)
 
