@@ -32,7 +32,7 @@ We could divide the mechanism in a few simple steps:
 
 ## Step 1: On a given page, find all elements to animate and store them in an array.
 
-In order to let the controller know about what to show on a page, we've added a class ".animated" to those elements. When the page loads, the javascript will scan for any elements with .animated and push to an array. We will also store its top/left position later to make the onScroll event work nicely.
+In order to let the controller know about what to show on a page, we've added a class ".animated" to those elements. In CSS, that class has an opacity set to 0. When the page loads, the javascript will scan for any elements with .animated and push to an array. We will also store its top/left position later to make the onScroll event work nicely.
 
 {% highlight javascript linenos=table %}
 $('.animated').each(function () {
