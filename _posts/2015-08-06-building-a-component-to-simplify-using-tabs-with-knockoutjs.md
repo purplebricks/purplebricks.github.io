@@ -6,6 +6,8 @@ author: banford
 category: programming
 tags: [javascript, knockout, frontend]
 showExcerpt: true
+screenText: "<p>&#62;BOWER</p><p>&#62;INSTALL</p><p>&#62;KO</p>"
+
 ---
 
 Tabs are a common tool used to split up user interfaces on the web. They usually represent to the user that you're working within the same section of a page but that there are multiple options for you there that don't warrant splitting of into full pages of their own.<!--more-->
