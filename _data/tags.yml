@@ -13,6 +13,9 @@
 - slug: css
   name: CSS
 
+- slug: knockout
+  name: KnockoutJS
+
 - slug: frontend
   name: Front-end
   
