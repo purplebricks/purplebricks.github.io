@@ -4,7 +4,7 @@ title: 'Web Deploy Azure Web App with Powershell'
 date: 2015-08-21 19:00:00
 author: rob
 tags : [webdeploy, msdeploy, azure, powershell]
-categories: [devops]
+category: devops
 
 showExcerpt: true
 screenText: "<p>&#62;BUILD</p><p>&#62;DEPLOY</p><p>&#62;WIN!!</p>"
