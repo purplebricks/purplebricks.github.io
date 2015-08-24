@@ -3,7 +3,7 @@ layout: news_item
 title: 'Web Deploy Azure Web App with Powershell'
 date: 2015-08-21 19:00:00
 author: rob
-tags : [webdeploy, msdeploy, azure, powershell]
+tags: [webdeploy, msdeploy, azure, powershell]
 category: devops
 
 showExcerpt: true

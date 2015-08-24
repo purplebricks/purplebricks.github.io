@@ -18,4 +18,15 @@
 
 - slug: frontend
   name: Front-end
-  
+
+- slug: webdeploy
+  name: webdeploy
+
+- slug: msdeploy
+  name: msdeploy
+
+- slug: azure
+  name: azure
+
+- slug: powershell
+  name: powershell
