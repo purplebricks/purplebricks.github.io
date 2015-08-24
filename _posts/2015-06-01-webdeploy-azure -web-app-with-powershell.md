@@ -10,7 +10,7 @@ showExcerpt: true
 screenText: "<p>&#62;BUILD</p><p>&#62;DEPLOY</p><p>&#62;WIN!!</p>"
 ---
 
-There are a number of ways of deploying to an azure web app, you can use ftp, integrate with github, use the azure powershell cmdlets, publish from visual studio, use a 3rd party tool like the very excellent octopus deploy or one of the many other options available. The option we have found to be the most reliable and fastest for scenario is web deploy.
+There are a number of ways of deploying to an azure web app, you can use ftp, integrate with github, use the azure powershell cmdlets, publish from visual studio, use a 3rd party tool like the very excellent octopus deploy or one of the many other options available. The option we have found to be the most reliable and fastest for our scenario is web deploy.
 
 <!--more-->
 
