@@ -30,3 +30,21 @@
 
 - slug: powershell
   name: powershell
+
+- slug: vsts
+  name: vsts
+
+- slug: fogbugz
+  name: fogbugz
+  
+- slug: automation
+  name: automation
+
+- slug: octopus
+  name: octopus 
+  
+- slug: integration
+  name: integration
+
+- slug: zapier
+  name: zapier
