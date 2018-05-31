@@ -24,7 +24,7 @@ Once that's done take a look at `<ProjectRoot>\obj\Release\Package\PackageTmp`. 
 
 First head over to the azure portal and download a copy of the publish profile for your site, these are specific to the deployment slot, so you probably want the staging slot version. The screen shot below shows where to find file you're after.
 
-![Portal]({{ site.url }}/assets/2015-08/portal.png)
+![Portal](/assets/2015-08/portal.png)
 
 For our environment we have one powershell script which deploys multiple different sites, so we don't want to just crack open the file and copy the values over, but rather we want to programmatically pick out the values we need. 
 

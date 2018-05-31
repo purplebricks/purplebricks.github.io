@@ -10,7 +10,7 @@ permalink: /category/
     <h2>Categories:</h2>
     <ul>
         {% for category in sortedcats %}
-            <li><a href="{{ site.url }}/category/{{ category | first }}">{{ category | first }}</a></li>
+            <li><a href="/category/{{ category | first }}">{{ category | first }}</a></li>
         {% endfor %}
     </ul>
 </div>

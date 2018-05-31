@@ -35,7 +35,7 @@ To add the Roles I have had to edit the App's manifest.
 
 In the [**New Azure Portal**](https://portal.azure.com/), go to **Active Directory**, **App Registrations**, find the **App** you want and select it, click the **Manifest** button at the top.
 
-![Octopus_Service_Prinicipal]({{ site.url }}/assets/2017-02/Octopus_Service_Principal.png){:class="img-responsive"}
+![Octopus_Service_Prinicipal](/assets/2017-02/Octopus_Service_Principal.png){:class="img-responsive"}
 
 This is what I have added into the **Application Manifest** for the **Octopus App**.
 I have defined 3 x **AppRoles** in the Azure App.
@@ -93,7 +93,7 @@ In **New Azure Portal**, **Active Directory**, **Users and Groups**, **All Group
 
 Create the required groups, following the naming convention of existing groups and ensuring there is a meaningful description used also. 
 
-![Octopus_Settings]({{ site.url }}/assets/2017-02/Ocotpus_Settings.PNG){:class="img-responsive"}
+![Octopus_Settings](/assets/2017-02/Ocotpus_Settings.PNG){:class="img-responsive"}
 
 I have created 3 x **AAD Security Groups**, each one will be associated with the **AppRoles** and **Octopus Teams**.
 
@@ -107,7 +107,7 @@ Now that we have defined the **AppRoles** and created the **Security Groups**. W
 In **New Azure Portal**, **Active Directory**, **Enterprise Applications**, select the **App** **"Octopus Deploy Service Principal"**, select **Properties**.
 Turn on **"User Assignment Required"**.
 
-![Octopus_User_Assignment]({{ site.url }}/assets/2017-02/Octopus_User_Assignment.PNG){:class="img-responsive"}
+![Octopus_User_Assignment](/assets/2017-02/Octopus_User_Assignment.PNG){:class="img-responsive"}
 
 <div class="alert alert-info">
   <strong>Info!:</strong> 
@@ -122,7 +122,7 @@ Browse to the **Group** you just created and **Select** it.
 Browse to the **AppRole** you want to associate with the **Group** and **Select** it.
 Do this for all the **AppRoles** and **Groups** you have created. 
 
-![Octopus_Roles]({{ site.url }}/assets/2017-02/Octopus_Roles.PNG){:class="img-responsive"}
+![Octopus_Roles](/assets/2017-02/Octopus_Roles.PNG){:class="img-responsive"}
 
 <div class="alert alert-info">
   <strong>Info!:</strong> 
@@ -141,7 +141,7 @@ Go into the **Team**, click **Add External Role** at the bottom.
 Using the **Value** you defined in the **Manifest** file earlier as the **Role ID**, give it a meaningful **Display Name** following the existing convention, then click **Add**. 
 Do this same procedure for the other **Teams** in **Octopus**
 
-![Octopus_Teams_2]({{ site.url }}/assets/2017-02/Octopus_Roles2.PNG){:class="img-responsive"}
+![Octopus_Teams_2](/assets/2017-02/Octopus_Roles2.PNG){:class="img-responsive"}
 
 ## Configuring Octopus Deploy to use AAD Auth Provider
 
@@ -164,13 +164,13 @@ In **New Azure Portal**, **Active Directory**, **Enterprise Applications**, sele
 
 The **Application ID** is the **Client ID**
 
-![Octopus_Client_ID]({{ site.url }}/assets/2017-02/Octopus_Client_ID.png){:class="img-responsive"}
+![Octopus_Client_ID](/assets/2017-02/Octopus_Client_ID.png){:class="img-responsive"}
 
 ## Issuer ID
 
 In **New Azure Portal**, **Active Directory**, **App Registrations**, **Endpoints**.
 
-![Endpoints]({{ site.url }}/assets/2017-02/Endpoints.png){:class="img-responsive"}
+![Endpoints](/assets/2017-02/Endpoints.png){:class="img-responsive"}
 
 Copy the **OAuth 2.0 Authorization Endpoint** and delete the **/oauth2/authorize** section from the end of the **URL**
 
@@ -200,4 +200,4 @@ Octopus.Server.exe configure --autoLoginEnabled=true
 If you now logout of Octopus.
 You will now be automatically signed in with your Azure AD credentials
 
-![Octo_Signin]({{ site.url }}/assets/2017-02/octo2.png){:class="img-responsive"}
+![Octo_Signin](/assets/2017-02/octo2.png){:class="img-responsive"}
