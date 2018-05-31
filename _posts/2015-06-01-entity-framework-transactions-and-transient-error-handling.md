@@ -11,7 +11,7 @@ screenText: "<p>&#62;ERROR</p><p>&#62;RETRY</p><p>&#62;WIN!!</p>"
 
 <!--
     showExcerpt: true
-    postThumb: 'https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png'
+    postThumb: 'https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png'
 -->
 
 In any networked environment transient errors are to be expected. It doesn't matter how good your infrastructure is, sometimes life happens. Enter the [Transient Fault Handling Application Block](https://msdn.microsoft.com/en-us/library/hh680934%28v=pandp.50%29.aspx), the block gives developers a simple way of handling transient errors, network blips, timeout errors and the like, it's very simple to use and should be used more often.

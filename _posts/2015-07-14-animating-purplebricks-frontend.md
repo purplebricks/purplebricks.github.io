@@ -11,7 +11,7 @@ screenText: "<p>&#62;ANIMATE</p><p>&#62;SCROLL</p><p>&#62;REPEAT</p>"
 
 <!--
     showExcerpt: true
-    postThumb: 'https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png'
+    postThumb: 'https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png'
 -->
 
 Before we started building the latest version of Purplebricks marketing website, our great design department came out with the most exciting features. As you probably expect reading this, half of them were very hard to implement on all browsers. <!--more--> SVGs triggered by scroll event, things popping out of (and into) the screen plus different versions and behaviour on a responsive design.

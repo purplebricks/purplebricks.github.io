@@ -3,7 +3,7 @@
 @import '../bootstrap/stylesheets/bootstrap/mixins';
 @import "../../../../_sass/pygments";
 @import "../../../../_sass/font-awesome";
-$imageCdnRoot : "https://az713861.vo.msecnd.net/web-images";
+$imageCdnRoot : "https://pbonlineassets.azureedge.net/web-images";
 
 @mixin clearfix {
     &:before, &:after { content: ""; display: table; }

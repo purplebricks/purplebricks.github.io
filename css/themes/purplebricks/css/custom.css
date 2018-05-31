@@ -329,10 +329,10 @@ pre {
     height: 33px;
     text-indent: -9999px;
     margin: 6px 0 0 0;
-    background-image: url("https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png"); }
+    background-image: url("https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       #header .logo {
-        background-image: url("https://az713861.vo.msecnd.net/web-images/marketingWebsite/global/siteCore@2x-p8-3.png");
+        background-image: url("https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@2x-p8-3.png");
         background-size: 243px 225px; } }
 
 .introPic {
