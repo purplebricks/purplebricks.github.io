@@ -48,3 +48,21 @@
 
 - slug: zapier
   name: zapier
+
+- slug: ai
+  name: ai
+
+- slug: chat bot
+  name: chat bot
+
+- slug: hackathon
+  name: hackathon
+  
+- slug: azure bot service
+  name: azure bot service
+  
+- slug: cognitive services
+  name: cognitive services
+  
+- slug: luis
+  name: LUIS
