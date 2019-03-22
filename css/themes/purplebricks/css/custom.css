@@ -325,15 +325,13 @@ pre {
     padding: 0; }
   #header .logo {
     display: block;
-    width: 35px;
+    width: 140px;
     height: 33px;
     text-indent: -9999px;
     margin: 6px 0 0 0;
-    background-image: url("https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@1x-p8-2.png"); }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      #header .logo {
-        background-image: url("https://pbonlineassets.azureedge.net/web-images/marketingWebsite/global/siteCore@2x-p8-3.png");
-        background-size: 243px 225px; } }
+    background-image: url("https://pbonlineassets.azureedge.net/web-images/marketing-global/logos/pb-logo-dark.svg");
+    background-repeat: no-repeat;
+  }
 
 .introPic {
   padding-bottom: 22px;
@@ -512,7 +510,6 @@ pre {
     #header .logo {
       width: 200px;
       height: 42px;
-      background-position: 0 -175px;
       margin: 17px 0 0 0; }
     #header .btn-lg {
       background: #f9845b;
