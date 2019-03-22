@@ -194,10 +194,11 @@ pre {
     }
     .logo {
         display: block;
-        @include size(35px, 33px);
+        @include size(149px, 33px);
         text-indent: -9999px;
         margin: 6px 0 0 0;
-        @include img-retina("#{$imageCdnRoot}/marketingWebsite/global/siteCore@1x-p8-2.png", "#{$imageCdnRoot}/marketingWebsite/global/siteCore@2x-p8-3.png", 243px, 225px);
+        background-image: url("https://pbonlineassets.azureedge.net/web-images/marketing-global/logos/pb-logo-dark.svg");
+        background-repeat: no-repeat;
     }
 }
 .introPic {
@@ -422,7 +423,6 @@ pre {
         }
         .logo {
             @include size(200px, 42px);
-            background-position: 0 -175px;
             margin: 17px 0 0 0;
         }
         .btn-lg {
