@@ -194,10 +194,11 @@ pre {
     }
     .logo {
         display: block;
-        @include size(140px, 33px);
+
+        @include size(149px, 33px);
         text-indent: -9999px;
         margin: 6px 0 0 0;
-        background-image: url('https://pbonlineassets.azureedge.net/web-images/marketing-global/logos/pb-logo-dark.svg');
+        background-image: url("https://pbonlineassets.azureedge.net/web-images/marketing-global/logos/pb-logo-dark.svg");
         background-repeat: no-repeat;
     }
 }
