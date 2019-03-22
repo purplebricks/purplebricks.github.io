@@ -194,6 +194,7 @@ pre {
     }
     .logo {
         display: block;
+
         @include size(149px, 33px);
         text-indent: -9999px;
         margin: 6px 0 0 0;
